@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Sina-oy | Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #d1d9e6;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #6a6aed;
+            margin-top: 8px;
+            border-radius: 9999px;
+        }
+        .card {
+            background-color: #1a202c;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #2d3748;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .btn-primary {
+            background-color: #6a6aed;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 9999px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #7b7bfa;
+        }
+        
+        .animate-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900 bg-opacity-50 backdrop-blur-lg sticky top-0 z-50 p-4 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Lee Sina-oy</a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#services" class="text-gray-400 hover:text-white transition-colors duration-200">Services</a>
+                <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors duration-200">Portfolio</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-200">Skills</a>
+                <a href="#experience" class="text-gray-400 hover:text-white transition-colors duration-200">Experience</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-gray-400 hover:text-white transition-colors duration-200">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 text-center">
+            <a href="#services" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Services</a>
+            <a href="#portfolio" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Portfolio</a>
+            <a href="#skills" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Skills</a>
+            <a href="#experience" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Experience</a>
+            <a href="#contact" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 max-w-7xl">
+
+        <!-- Hero Section -->
+        <section class="text-center py-20 md:py-32 animate-fade-in">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                Driving Business Success with <br class="hidden md:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Intelligent Automation & Data Solutions</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
+                I build robust software solutions that streamline operations, integrate complex systems, and turn data into actionable insights for my clients. My expertise lies in CRM, cloud APIs, and specialized business applications.
+            </p>
+            <a href="#contact" class="btn-primary inline-block font-semibold">Get in Touch</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16">
+            <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in">Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1: AI & Data Solutions -->
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.1s;">
+                    <div class="text-4xl text-purple-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot"><path d="M12 8V2H7a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2z"/><path d="M17 12V2a5 5 0 0 1 5 5v5a1 1 0 0 1-1 1h-6v4h-2a2 2 0 0 1-2-2v-4H9a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2zM9 16v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">AI & Data-Driven Solutions</h3>
+                    <p class="text-gray-400">
+                        I develop intelligent tools that process unstructured data, including <b>Speech-to-Text</b> and <b>Sentiment Analysis</b>. My solutions provide actionable insights and enhance business intelligence for decision-making through <b>call recording analysis</b> and <b>custom dashboards</b>.
+                    </p>
+                </div>
+                <!-- Service 2: CRM & API Integrations -->
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="text-4xl text-purple-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database-zap"><path d="M12 21v-8"/><path d="M16 13h6"/><path d="M8 13H2"/><path d="M4 14.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0"/><path d="M19 14.5a2.5 2.5 0 0 1 5 0"/><path d="M12 3c-3.3 0-6 1.5-6 4s2.7 4 6 4c.3 0 .7 0 1-.02"/><path d="M22 7c0-2.5-2.7-4-6-4s-6 1.5-6 4c0 .3.1.7.2 1"/><path d="M14.5 20l-3 3 1-5 3-3 -1 5z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">CRM & API Integrations</h3>
+                    <p class="text-gray-400">
+                        I specialize in building robust REST APIs and integrations for CRMs like Pipedrive, HubSpot, and HighLevel, as well as cloud drive APIs (OneDrive, Google Drive, Dropbox), to streamline business processes.
+                    </p>
+                </div>
+                <!-- Service 3: Intelligent Automation -->
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.3s;">
+                    <div class="text-4xl text-purple-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot-message-square"><path d="M12 6V2l4 4"/><path d="M17 7.21c-.8-.9-2.05-1.12-3.19-.78-.7.24-1.35.73-1.96 1.34L8 15l-2 2 1.5-4.5c.38-1.14.7-2.7.95-3.86a4 4 0 0 1 2.37-2.67c1.47-.65 2.87-1.14 3.73-2.12"/><path d="M11 15a7 7 0 0 0-3.53-2.61c-.5-.22-.96-.28-1.39-.23-1.6.2-3.23 1.3-4.54 2.6A3.42 3.42 0 0 0 2 18.17c0 1.25.7 2.38 1.84 2.85 1.23.51 2.76.85 4.54.85a11.13 11.13 0 0 0 6.64-2.48l1.45-1.09c1.07-.81 2.1-1.89 2.92-3.11"/><path d="M12 17a10.5 10.5 0 0 0 4.1-4.7c1.2-2.7 2.6-6.17 2.8-7.97.2-2.1-.2-3.2-2.1-3.4-.6-.08-1.7-.1-2.9 1.4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Intelligent Automation</h3>
+                    <p class="text-gray-400">
+                        I build powerful automation solutions using platforms like <b>GHL</b>, <b>Make</b>, and <b>Rundeck</b> to streamline routine jobs and integrate complex workflows, improving overall operational efficiency.
+                    </p>
+                </div>
+                 <!-- Service 4: Web-Based Systems -->
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.4s;">
+                    <div class="text-4xl text-purple-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-app-window"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v4"/><path d="M14 4v4"/><path d="M8 8h8"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Web-Based Systems</h3>
+                    <p class="text-gray-400">
+                        I design and build comprehensive web-based solutions, including Point of Sale (POS), Lending, and Payroll systems. My work focuses on creating intuitive and efficient applications for business operations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16">
+            <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <!-- Project 1: AI & Data Project -->
+                <div class="card rounded-lg overflow-hidden animate-fade-in" style="animation-delay: 0.5s;">
+                    <img src="https://placehold.co/600x400/2a2a4b/fff?text=AI+%26+Data" alt="AI and Data Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Speech-to-Text & Sentiment Analysis Console App</h3>
+                        <p class="text-gray-400">
+                            A powerful background console application that processes call recordings, performs <b>Speech-to-Text conversion</b>, analyzes for <b>sentiment</b>, and sends automated email notifications. It provides valuable <b>customer service insights</b>.
+                        </p>
+                    </div>
+                </div>
+                <!-- Project 2: Real Estate Calculator -->
+                <div class="card rounded-lg overflow-hidden animate-fade-in" style="animation-delay: 0.6s;">
+                    <img src="https://placehold.co/600x400/2a2a4b/fff?text=Real+Estate" alt="Real Estate Calculator App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Real Estate Mini-App</h3>
+                        <p class="text-gray-400">
+                            A web-based mini-application that automates complex real estate calculations. It helps users quickly determine <b>Novation</b>, <b>Zestimate</b>, and <b>Lowball Offers</b>, providing a competitive edge.
+                        </p>
+                    </div>
+                </div>
+                <!-- Project 3: Web-Based POS & Lending System -->
+                <div class="card rounded-lg overflow-hidden animate-fade-in" style="animation-delay: 0.7s;">
+                    <img src="https://placehold.co/600x400/2a2a4b/fff?text=POS+%26+Lending" alt="Web-Based POS System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Web-Based POS for Lending Company</h3>
+                        <p class="text-gray-400">
+                            A secure and efficient system designed to handle <b>Point of Sale</b> transactions and <b>Lending</b> management. This solution improved transaction speed and accuracy for a financial services client.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16">
+            <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center mb-12">
+                <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 0.8s;">
+                    <i class="fas fa-microchip text-4xl text-purple-400 mb-2"></i>
+                    <p class="text-white font-bold">AI & Data</p>
+                </div>
+                <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 0.9s;">
+                    <i class="fas fa-cloud-arrow-up text-4xl text-purple-400 mb-2"></i>
+                    <p class="text-white font-bold">Cloud & CI/CD</p>
+                </div>
+                <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 1.0s;">
+                    <i class="fas fa-code text-4xl text-purple-400 mb-2"></i>
+                    <p class="text-white font-bold">Programming</p>
+                </div>
+                <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 1.1s;">
+                    <i class="fas fa-server text-4xl text-purple-400 mb-2"></i>
+                    <p class="text-white font-bold">Backend & APIs</p>
+                </div>
+                <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 1.2s;">
+                    <i class="fas fa-database text-4xl text-purple-400 mb-2"></i>
+                    <p class="text-white font-bold">Databases</p>
+                </div>
+                <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 1.3s;">
+                    <i class="fas fa-network-wired text-4xl text-purple-400 mb-2"></i>
+                    <p class="text-white font-bold">Automation</p>
+                </div>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-4 animate-fade-in" style="animation-delay: 1.4s;">Technical Proficiencies</h3>
+            <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 1.5s;">
+                <div class="flex flex-wrap justify-center gap-4 text-gray-400">
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">C#</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">NodeJS</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">JavaScript</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">TypeScript</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">SQL</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">.NET Core</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">ASP.NET MVC</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">REST API</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Knockout.js</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">React</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">AngularJS</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">NextJS</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">SQL Server</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">MySQL</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">HeidiSQL</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">SQLite</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">RabbitMQ</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Postman</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">GitLab</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Rundeck</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Netlify</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Render</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">GitHub CI/CD</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">GHL & Make</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">VoIP Integration</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Google Chrome Extensions</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Speech-to-Text</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Sentiment Analysis</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Unit Testing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CRM & Integrations Section -->
+        <section id="integrations" class="py-16">
+            <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in" style="animation-delay: 1.6s;">CRM & Integrations Expertise</h2>
+            <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 1.7s;">
+                <div class="flex flex-wrap justify-center gap-4 text-gray-400">
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Pipedrive</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">HubSpot</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">HighLevel</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">ActiveCampaign</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Agile CRM</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Capsule CRM</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Freshsales</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">GenieAI</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Insightly</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Keap</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Microsoft Dynamics 365 Sales</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">OnePageCRM</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Salesforce</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Zoho CRM</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Zendesk Support</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">ServiceM8</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Slack</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Zapier</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Google Drive API</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">OneDrive API</span>
+                    <span class="text-sm border rounded-full px-3 py-1 border-gray-600 bg-gray-800">Dropbox API</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16">
+            <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in" style="animation-delay: 1.8s;">Experience</h2>
+            <div class="space-y-8">
+                <!-- Job 1: Freelance -->
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 1.9s;">
+                    <h3 class="text-xl font-bold text-white">Freelance Software Developer</h3>
+                    <p class="text-purple-400 mb-2">August 2023 - Present</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Developed and deployed a real-estate mini-application via a <b>CI/CD pipeline</b>, automating complex calculations for Novation, Zestimate, and Lowball Offers.</li>
+                        <li>Built a web-based <b>Point of Sale (POS) for a Lending Company</b>, streamlining financial transactions and customer management.</li>
+                        <li>Created automated workflows using <b>GHL</b>, <b>Make</b>, and <b>Webhooks</b> to enhance data flow and business process efficiency.</li>
+                    </ul>
+                </div>
+                <!-- Job 2: Invoco LTD -->
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 2.0s;">
+                    <h3 class="text-xl font-bold text-white">Software Developer at Invoco LTD</h3>
+                    <p class="text-purple-400 mb-2">April 2016 - May 2025</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Implemented and maintained integrations with key CRMs like <b>Pipedrive</b>, <b>HubSpot</b>, <b>Salesforce</b>, and <b>Zoho CRM</b> via REST APIs, improving data synchronization between telecom services and customer management systems.</li>
+                        <li>Created a Google Chrome Extension (`Click2Call`) to streamline outbound calls from CRM systems with <b>desktop notifications</b>.</li>
+                        <li>Developed a background <b>Speech-to-Text console app</b> to process call recordings, perform <b>sentiment analysis</b>, and generate automated email notifications.</li>
+                        <li>Automated <b>VoIP phone provisioning via API</b> for Yealink phones, significantly boosting deployment efficiency for new clients.</li>
+                        <li>Developed and maintained the company's <b>API and comprehensive API documentation</b>, ensuring consistent and reliable data exchange.</li>
+                        <li>Integrated various <b>cloud drive APIs</b> (OneDrive, Google Drive, Zoho WorkDrive, Dropbox) for seamless file synchronization.</li>
+                        <li>Used <b>Rundeck</b> to automate routine jobs and processes, ensuring system reliability and reducing manual effort.</li>
+                    </ul>
+                </div>
+                <!-- Job 3: Perez Retana LTD -->
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 2.1s;">
+                    <h3 class="text-xl font-bold text-white">Web Developer at Perez Retana LTD</h3>
+                    <p class="text-purple-400 mb-2">June 2015 - April 2016</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Refactored server-side data handling by implementing <b>lazy loading and client-side pagination</b>, which resulted in up to <b>50% faster page load times</b>.</li>
+                        <li>Built automation tools for <b>payroll</b>, <b>petty cash management</b>, <b>event logs</b>, <b>email dispatch</b>, and <b>invoice generation</b>.</li>
+                    </ul>
+                </div>
+                <!-- Job 4: MKBGIT -->
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 2.2s;">
+                    <h3 class="text-xl font-bold text-white">IT Specialist at MKBGIT</h3>
+                    <p class="text-purple-400 mb-2">June 2014 - June 2015</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Contributed as a key member of the development team for a Car Sharing web application, implementing <b>core CRUD functionalities</b> and integrating <b>JavaScript libraries</b> to enhance UI interactions.</li>
+                        <li>Built automation solutions for payroll processing, including <b>JSON-to-Web Form data handling</b> and API integrations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16">
+            <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in" style="animation-delay: 2.3s;">Contact</h2>
+            <div class="card p-8 rounded-lg max-w-2xl mx-auto text-center animate-fade-in" style="animation-delay: 2.4s;">
+                <p class="text-gray-400 mb-6">
+                    Interested in working together or just want to say hello? I'd love to hear from you.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-center space-x-2">
+                        <i class="fas fa-envelope text-purple-400"></i>
+                        <a href="mailto:leeEgino1178@outlook.com" class="text-white hover:underline">leeEgino1178@outlook.com</a>
+                    </div>
+                    <div class="flex items-center justify-center space-x-2">
+                        <i class="fas fa-phone text-purple-400"></i>
+                        <a href="tel:+639660820520" class="text-white hover:underline">+63 966 082 0520</a>
+                    </div>
+                    <div class="flex items-center justify-center space-x-2">
+                        <i class="fab fa-linkedin text-purple-400"></i>
+                        <a href="https://www.linkedin.com/in/lee-sina-oy-a4a77b104/" class="text-white hover:underline" target="_blank">LinkedIn Profile</a>
+                    </div>
+                    <div class="flex items-center justify-center space-x-2">
+                        <i class="fab fa-github text-purple-400"></i>
+                        <a href="https://github.com/dyingbreed12" class="text-white hover:underline" target="_blank">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 bg-opacity-50 backdrop-blur-lg text-center text-gray-500 py-8">
+        <p>&copy; 2024 Lee Sina-oy. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Hide mobile menu on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.animate-fade-in');
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+</body>
+</html>
