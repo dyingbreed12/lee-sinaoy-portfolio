@@ -58,26 +58,25 @@
 </head>
 <body class="antialiased">
 
-    <!-- Header & Navigation -->
     <header class="bg-gray-900 bg-opacity-50 backdrop-blur-lg sticky top-0 z-50 p-4 shadow-lg">
         <nav class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-white">Lee Sina-oy</a>
             <div class="space-x-4 hidden md:flex">
                 <a href="#services" class="text-gray-400 hover:text-white transition-colors duration-200">Services</a>
                 <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors duration-200">Portfolio</a>
+                <a href="#why-me" class="text-gray-400 hover:text-white transition-colors duration-200">Why Me?</a>
                 <a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-200">Skills</a>
                 <a href="#experience" class="text-gray-400 hover:text-white transition-colors duration-200">Experience</a>
                 <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
             </div>
-            <!-- Mobile Menu Button -->
             <button id="menu-toggle" class="md:hidden text-gray-400 hover:text-white transition-colors duration-200">
                 <i class="fas fa-bars text-xl"></i>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 text-center">
             <a href="#services" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Services</a>
             <a href="#portfolio" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Portfolio</a>
+            <a href="#why-me" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Why Me?</a>
             <a href="#skills" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Skills</a>
             <a href="#experience" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Experience</a>
             <a href="#contact" class="block py-2 text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
@@ -86,7 +85,6 @@
 
     <main class="container mx-auto px-4 py-16 max-w-7xl">
 
-        <!-- Hero Section -->
         <section class="text-center py-20 md:py-32 animate-fade-in">
             <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
                 Driving Business Success with <br class="hidden md:block">
@@ -97,12 +95,34 @@
             </p>
             <a href="#contact" class="btn-primary inline-block font-semibold">Get in Touch</a>
         </section>
+        
+        <section id="why-me" class="py-16">
+            <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in">Why Work With Me?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.1s;">
+                    <h3 class="text-xl font-bold text-white mb-2">Business-First Approach</h3>
+                    <p class="text-gray-400">
+                        I don't just write code; I solve business problems. My focus is on understanding your unique needs and delivering solutions that provide a tangible return on investment, whether it's through increased efficiency or new revenue streams.
+                    </p>
+                </div>
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-bold text-white mb-2">End-to-End Expertise</h3>
+                    <p class="text-gray-400">
+                        From initial consultation and strategic planning to development, deployment, and ongoing support, I provide a comprehensive service. You get a single point of contact for all your software needs.
+                    </p>
+                </div>
+                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.3s;">
+                    <h3 class="text-xl font-bold text-white mb-2">Proven Track Record</h3>
+                    <p class="text-gray-400">
+                        My portfolio and experience section highlight real-world projects with quantifiable results. I have a history of building robust, scalable solutions that stand the test of time and business growth.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <!-- Services Section -->
         <section id="services" class="py-16">
             <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in">Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service 1: AI & Data Solutions -->
                 <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.1s;">
                     <div class="text-4xl text-purple-400 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot"><path d="M12 8V2H7a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2z"/><path d="M17 12V2a5 5 0 0 1 5 5v5a1 1 0 0 1-1 1h-6v4h-2a2 2 0 0 1-2-2v-4H9a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2zM9 16v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
@@ -112,7 +132,6 @@
                         I develop intelligent tools that process unstructured data, including <b>Speech-to-Text</b> and <b>Sentiment Analysis</b>. My solutions provide actionable insights and enhance business intelligence for decision-making through <b>call recording analysis</b> and <b>custom dashboards</b>.
                     </p>
                 </div>
-                <!-- Service 2: CRM & API Integrations -->
                 <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.2s;">
                     <div class="text-4xl text-purple-400 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database-zap"><path d="M12 21v-8"/><path d="M16 13h6"/><path d="M8 13H2"/><path d="M4 14.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0"/><path d="M19 14.5a2.5 2.5 0 0 1 5 0"/><path d="M12 3c-3.3 0-6 1.5-6 4s2.7 4 6 4c.3 0 .7 0 1-.02"/><path d="M22 7c0-2.5-2.7-4-6-4s-6 1.5-6 4c0 .3.1.7.2 1"/><path d="M14.5 20l-3 3 1-5 3-3 -1 5z"/></svg>
@@ -122,7 +141,6 @@
                         I specialize in building robust REST APIs and integrations for CRMs like Pipedrive, HubSpot, and HighLevel, as well as cloud drive APIs (OneDrive, Google Drive, Dropbox), to streamline business processes.
                     </p>
                 </div>
-                <!-- Service 3: Intelligent Automation -->
                 <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.3s;">
                     <div class="text-4xl text-purple-400 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot-message-square"><path d="M12 6V2l4 4"/><path d="M17 7.21c-.8-.9-2.05-1.12-3.19-.78-.7.24-1.35.73-1.96 1.34L8 15l-2 2 1.5-4.5c.38-1.14.7-2.7.95-3.86a4 4 0 0 1 2.37-2.67c1.47-.65 2.87-1.14 3.73-2.12"/><path d="M11 15a7 7 0 0 0-3.53-2.61c-.5-.22-.96-.28-1.39-.23-1.6.2-3.23 1.3-4.54 2.6A3.42 3.42 0 0 0 2 18.17c0 1.25.7 2.38 1.84 2.85 1.23.51 2.76.85 4.54.85a11.13 11.13 0 0 0 6.64-2.48l1.45-1.09c1.07-.81 2.1-1.89 2.92-3.11"/><path d="M12 17a10.5 10.5 0 0 0 4.1-4.7c1.2-2.7 2.6-6.17 2.8-7.97.2-2.1-.2-3.2-2.1-3.4-.6-.08-1.7-.1-2.9 1.4"/></svg>
@@ -132,8 +150,7 @@
                         I build powerful automation solutions using platforms like <b>GHL</b>, <b>Make</b>, and <b>Rundeck</b> to streamline routine jobs and integrate complex workflows, improving overall operational efficiency.
                     </p>
                 </div>
-                 <!-- Service 4: Web-Based Systems -->
-                <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.4s;">
+                 <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 0.4s;">
                     <div class="text-4xl text-purple-400 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-app-window"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v4"/><path d="M14 4v4"/><path d="M8 8h8"/></svg>
                     </div>
@@ -145,12 +162,10 @@
             </div>
         </section>
 
-        <!-- Portfolio Section -->
         <section id="portfolio" class="py-16">
             <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in">Portfolio</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                 <!-- Project 1: AI & Data Project -->
-                <div class="card rounded-lg overflow-hidden animate-fade-in" style="animation-delay: 0.5s;">
+                 <div class="card rounded-lg overflow-hidden animate-fade-in" style="animation-delay: 0.5s;">
                     <img src="https://placehold.co/600x400/2a2a4b/fff?text=AI+%26+Data" alt="AI and Data Project" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-white mb-2">Speech-to-Text & Sentiment Analysis Console App</h3>
@@ -159,7 +174,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Project 2: Real Estate Calculator -->
                 <div class="card rounded-lg overflow-hidden animate-fade-in" style="animation-delay: 0.6s;">
                     <img src="https://placehold.co/600x400/2a2a4b/fff?text=Real+Estate" alt="Real Estate Calculator App" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -169,7 +183,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Project 3: Web-Based POS & Lending System -->
                 <div class="card rounded-lg overflow-hidden animate-fade-in" style="animation-delay: 0.7s;">
                     <img src="https://placehold.co/600x400/2a2a4b/fff?text=POS+%26+Lending" alt="Web-Based POS System" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -182,7 +195,6 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="py-16">
             <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in">Skills</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center mb-12">
@@ -247,7 +259,6 @@
             </div>
         </section>
 
-        <!-- CRM & Integrations Section -->
         <section id="integrations" class="py-16">
             <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in" style="animation-delay: 1.6s;">CRM & Integrations Expertise</h2>
             <div class="card p-6 rounded-lg animate-fade-in" style="animation-delay: 1.7s;">
@@ -277,11 +288,9 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
         <section id="experience" class="py-16">
             <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in" style="animation-delay: 1.8s;">Experience</h2>
             <div class="space-y-8">
-                <!-- Job 1: Freelance -->
                 <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 1.9s;">
                     <h3 class="text-xl font-bold text-white">Freelance Software Developer</h3>
                     <p class="text-purple-400 mb-2">August 2025 - Present</p>
@@ -291,7 +300,6 @@
                         <li>Created automated workflows using <b>GHL</b>, <b>Make</b>, and <b>Webhooks</b> to enhance data flow and business process efficiency.</li>
                     </ul>
                 </div>
-                <!-- Job 2: Invoco LTD -->
                 <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 2.0s;">
                     <h3 class="text-xl font-bold text-white">Software Developer at Invoco LTD</h3>
                     <p class="text-purple-400 mb-2">April 2016 - May 2025</p>
@@ -305,7 +313,6 @@
                         <li>Used <b>Rundeck</b> to automate routine jobs and processes, ensuring system reliability and reducing manual effort.</li>
                     </ul>
                 </div>
-                <!-- Job 3: Perez Retana LTD -->
                 <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 2.1s;">
                     <h3 class="text-xl font-bold text-white">Web Developer at Perez Retana LTD</h3>
                     <p class="text-purple-400 mb-2">June 2015 - April 2016</p>
@@ -314,7 +321,6 @@
                         <li>Built automation tools for <b>payroll</b>, <b>petty cash management</b>, <b>event logs</b>, <b>email dispatch</b>, and <b>invoice generation</b>.</li>
                     </ul>
                 </div>
-                <!-- Job 4: MKBGIT -->
                 <div class="card p-8 rounded-lg animate-fade-in" style="animation-delay: 2.2s;">
                     <h3 class="text-xl font-bold text-white">IT Specialist at MKBGIT</h3>
                     <p class="text-purple-400 mb-2">June 2014 - June 2015</p>
@@ -326,7 +332,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="py-16">
             <h2 class="section-title text-3xl font-bold mb-12 animate-fade-in" style="animation-delay: 2.3s;">Contact</h2>
             <div class="card p-8 rounded-lg max-w-2xl mx-auto text-center animate-fade-in" style="animation-delay: 2.4s;">
@@ -356,7 +361,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 bg-opacity-50 backdrop-blur-lg text-center text-gray-500 py-8">
         <p>&copy; 2024 Lee Sina-oy. All Rights Reserved.</p>
     </footer>
@@ -409,4 +413,3 @@
 
 </body>
 </html>
-
