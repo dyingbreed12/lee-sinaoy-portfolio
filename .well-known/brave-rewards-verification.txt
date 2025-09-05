@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: leesinaoy.netlify.app
+Token: f3d4efc471bed4491cb966344c933059736c30c7dcf0e62a6c1ca231adb9e1b2
